@@ -14,4 +14,7 @@ Gem::Specification.new do |gem|
   gem.name          = "unrar"
   gem.require_paths = ["lib"]
   gem.version       = Unrar::VERSION
+
+  gem.add_development_dependency 'rspec', '~> 2.9'
+  gem.add_development_dependency 'autotest'
 end
