@@ -38,4 +38,13 @@ describe Unrar::Archive do
       subject.extract('001.jpg', '002.jpg').should have_exactly(2).items
     end
   end
+
+  describe "should be able to list files" do
+    subject { Unrar::Archive.new('spec/fixtures/test.rar') }
+
+    it "Correctly list all files" do
+      subject.list.should have(3).items
+    end
+  end
+
 end

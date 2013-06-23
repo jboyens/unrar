@@ -28,6 +28,14 @@ module Unrar
       Dir["#{tmpdir}/**/*"].to_ary
     end
 
+    def list
+      items = []
+      cmdoutput = `#{Archive.unrar} lb #{self.file}`
+      cmdoutput.each_line do |line|
+        items << line
+      end
+      return items
+    end
     def self.unrar
       @@unrar ||= search_for "unrar"
     end
