@@ -4,7 +4,7 @@ require File.expand_path('../lib/unrar/version', __FILE__)
 Gem::Specification.new do |gem|
   gem.authors       = ["JR Boyens"]
   gem.email         = ["jr.boyens@chacha.com"]
-  gem.description   = %q{TODO: Write a gem description}
+  gem.description   = %q{Write a gem description}
   gem.summary       = %q{TODO: Write a gem summary}
   gem.homepage      = ""
 
